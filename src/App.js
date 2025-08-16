@@ -114,7 +114,7 @@ onButtonSubmit = () => {
   .then(result => {
     if (result && result.outputs && result.outputs[0]?.data?.regions) {
       // If face detection is successful, update the rank
-      fetch('https://smartbrain-af5q.onrender.com/imageurl', { 
+      fetch('https://smartbrain-af5q.onrender.com/image', { 
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id: user.id })
@@ -122,7 +122,12 @@ onButtonSubmit = () => {
       .then(response => response.json())
       .then(count => {
         // Update state with the new entry count
-        this.setState(Object.assign(user, { entries: count }));
+        this.setState(prevState => ({
+  user: {
+    ...prevState.user,
+    entries: count
+  }
+}));
       })
       .catch(console.log);
 
