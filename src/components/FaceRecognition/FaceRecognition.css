@@ -1,0 +1,54 @@
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.ma {
+  margin: auto;
+}
+
+.absolute {
+  position: relative; /* Changed from absolute to relative for proper container */
+}
+
+.mt2 {
+  margin-top: 0.5rem;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Critical: Bounding box styling */
+.bounding-box {
+  position: absolute;
+  box-shadow: 0 0 0 3px #149df2 inset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: none; /* Prevents interference with image interactions */
+}
+
+/* Ensure the image container is positioned relatively for absolute children */
+#inputimage {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Additional styling for better visual appearance */
+.bounding-box:hover {
+  box-shadow: 0 0 0 3px #ff6b6b inset;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Responsive design considerations */
+@media (max-width: 768px) {
+  #inputimage {
+    width: 100%;
+    max-width: 400px;
+  }
+}
