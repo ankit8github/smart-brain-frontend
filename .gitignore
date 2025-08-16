@@ -1,0 +1,36 @@
+# Dependencies
+# Ignore the folder where all the downloaded packages are stored.
+node_modules
+
+# Build output
+build
+dist
+.next
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# IDE / Editor specific files
+# Ignore configuration files from common code editors.
+.idea
+.vscode/
+
+# OS generated files
+# Ignore metadata files created by macOS and Windows.
+.DS_Store
+Thumbs.db
+
+# Test reports
+# Ignore reports generated from running tests.
+/coverage
