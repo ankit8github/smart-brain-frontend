@@ -30,7 +30,7 @@ if (!emailRegex.test(this.state.email)) {
   return alert("Please enter a valid email address.");
 }
 
-    fetch('http://localhost:3000/register', {
+    fetch('https://smartbrain-af5q.onrender.com/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
