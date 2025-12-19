@@ -23,7 +23,7 @@ onSubmitSignIn = (event) => {
     return alert("Please enter your email and password.");
   }
 
-  fetch('https://smartbrain-af5q.onrender.com/signin', {
+  fetch('https://smart-brain-api-96hc.onrender.com/signin', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({

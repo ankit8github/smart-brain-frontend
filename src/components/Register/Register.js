@@ -29,8 +29,7 @@ const emailRegex = /^\S+@\S+\.\S+$/; // A simple regex for basic email format va
 if (!emailRegex.test(this.state.email)) {
   return alert("Please enter a valid email address.");
 }
-
-    fetch('https://smartbrain-af5q.onrender.com/register', {
+    fetch('https://smart-brain-api-96hc.onrender.com/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -63,7 +62,7 @@ if (!emailRegex.test(this.state.email)) {
 
   render() {
     
-    const { onRouteChange } = this.props;
+    //const { onRouteChange } = this.props;
     // Signin component renders a simple form for user sign-in
     return (
       <article className="br4 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 shadow-5 center">

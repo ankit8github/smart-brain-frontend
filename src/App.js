@@ -103,7 +103,7 @@ onButtonSubmit = () => {
   this.setState({ imageUrl: input });
 
   // Call your backend's /imageurl endpoint
-  fetch('https://smartbrain-af5q.onrender.com/imageurl', {
+  fetch('https://smart-brain-api-96hc.onrender.com/imageurl', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -114,7 +114,7 @@ onButtonSubmit = () => {
   .then(result => {
     if (result && result.outputs && result.outputs[0]?.data?.regions) {
       // If face detection is successful, update the rank
-      fetch('https://smartbrain-af5q.onrender.com/image', { 
+      fetch('https://smart-brain-api-96hc.onrender.com/image', { 
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id: user.id })
@@ -177,4 +177,3 @@ render() {
 }
 
 export default App;
-
