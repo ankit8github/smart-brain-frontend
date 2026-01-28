@@ -4,7 +4,6 @@ SmartBrain is a **full-stack face recognition web application**.
 It allows users to **register, sign in, and detect faces in images** by submitting image URLs.  
 The project is built with a **React frontend** and a **Node.js + Express backend**, using **PostgreSQL** for database storage and the **Clarifai API** for face detection.  
 
----
 
 ## ✨ Features
 - 🔑 **User Authentication** – Secure registration & login with bcrypt  
@@ -14,7 +13,6 @@ The project is built with a **React frontend** and a **Node.js + Express backend
 - 🎨 **Modern UI** – Responsive and clean React interface  
 - ⚡ **Seamless Integration** – Full-stack connectivity between frontend & backend  
 
----
 
 ## 🛠️ Tech Stack
 
@@ -29,7 +27,6 @@ The project is built with a **React frontend** and a **Node.js + Express backend
 - [bcrypt](https://www.npmjs.com/package/bcrypt) – Password hashing  
 - [Clarifai API](https://www.clarifai.com/) – Face detection service  
 
----
 
 ## 📂 Project Structure
 smartbrain/
@@ -41,7 +38,6 @@ smartbrain/
 │── smart-brain-api/ # Node.js backend
 │ ├── server.js
 │ └── package.json
----
 
 ## 🚀 Getting Started
 
@@ -118,4 +114,3 @@ Ankit Kashyap
 📧 Email: ankit.kashyap0221@gmail.com
 🔗 GitHub : https://github.com/ankit8github
 💼 LinkedIn : https://www.linkedin.com/in/ankitkashyap01/
----
